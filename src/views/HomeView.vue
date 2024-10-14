@@ -1,8 +1,10 @@
 <script setup lang="ts">
+/*
+This is the HomeView component, it is the first view that the user sees when they visit the website.
+It redirects the user to the SetupView component when the user clicks the "Get Started" button.
+*/
 import Button from 'primevue/button';
 import { useRouter } from 'vue-router';
-//import TheWelcome from '../components/TheWelcome.vue'
-
 const router = useRouter();
 const navTo = () => {
   router.push('/setup');
